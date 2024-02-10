@@ -29,3 +29,19 @@ body {
     font-size: 22px;
     text-align: center;
  }
+
+ #inputArea {
+   position: relative;
+   width: 100%;
+ }
+
+ .listInput #userInput {
+   background: #cce6f9;
+   color: #0e5974;
+   border: 2px solid black;
+   height: 60px;
+   width: 50%;
+   border-radius: 10px 10px 10px 10px;
+   text-align: center;
+   transition: #EBF7FF;
+ }
