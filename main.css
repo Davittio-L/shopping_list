@@ -43,5 +43,29 @@ body {
    width: 50%;
    border-radius: 10px 10px 10px 10px;
    text-align: center;
-   transition: #EBF7FF;
+   transition: all .2s;
+ }
+
+ .listInput #userInput:hover {
+   background: #cce6f9;
+ }
+
+ .listInput #userInput:focus {
+   box-shadow: none;
+   outline: none;
+   background: #EBF7FF;
+ }
+
+ .custBtn {
+   position: fixed;
+   top: 10px;
+   right: 10px;
+   background: transparent;
+   color: #98b8bd;
+   width: 40px;
+   height: 60px;
+   border: 3px solid transpartent;
+   border-left: 0px;
+   border-radius: 0 10px 10px 0;
+   transition: 100 .2s;
  }
