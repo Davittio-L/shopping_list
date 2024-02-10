@@ -122,3 +122,27 @@ body {
  .done {
    text-decoration: line-through;
  }
+
+ @media screen and (max-width: 760px) {
+   .container {
+      height: 100%;
+   }
+   .header {
+      margin-top: 65px;
+   }
+   #inputArea {
+      position: fixed;
+      top:0px;
+      left: 0px;
+      z-index: 10px;
+   }
+   .listInput @userInput {
+      border-radius: 0;
+      border-left: 0;
+      border-right: 0;
+      box-shadow: 0px 0px 10px 1px #384046;
+   }
+   .mainList .listItem:hover {
+      background: #CAE9FF;
+   }
+ }
