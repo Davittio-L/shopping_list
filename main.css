@@ -58,8 +58,8 @@ body {
 
  .custBtn {
    position: fixed;
-   top: 10px;
-   right: 10px;
+   top: 0px;
+   right: 0px;
    background: transparent;
    color: #98b8bd;
    width: 40px;
@@ -68,4 +68,33 @@ body {
    border-left: 0px;
    border-radius: 0 10px 10px 0;
    transition: 100 .2s;
+ }
+ 
+ .custBtn:hover {
+   color: #A6BFD1;
+   cursor: pointer;
+ }
+
+ .custBtn:focus {
+   outline: none;
+ }
+
+ .mainList {
+   padding-top: 20px;
+ }
+
+ .mainList .listItem {
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding-left: 20px;
+   margin-bottom: 5px;
+   font-size: 26px;
+   background: #9AA8C1;
+   border: 2px solid black;
+   color: #6F909C;
+   height: 60px;
+   width: 100%;
+   list-style: none;
+   transition: all .2s;
  }
