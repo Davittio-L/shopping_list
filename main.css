@@ -57,14 +57,14 @@ body {
  }
 
  .custBtn {
-   position: fixed;
+   position: absolute;
    top: 0px;
    right: 0px;
    background: transparent;
    color: #98b8bd;
    width: 40px;
    height: 60px;
-   border: 3px solid transpartent;
+   border: 3px solid transparent;
    border-left: 0px;
    border-radius: 0 10px 10px 0;
    transition: 100 .2s;

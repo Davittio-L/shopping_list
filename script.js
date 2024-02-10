@@ -4,7 +4,7 @@ var ul = document.getElementsByTagName('ul')[0];
 
 // Check Length of input Field
 function addItemLength() {
-    return document.getElementById('userInput').ariaValueMax.length;
+    return document.getElementById('userInput').value.length;
 }
 
 // Check how many list elements exist
@@ -19,37 +19,37 @@ function createListItem() {
     li.append(document.createTextNode(input.value));
     li.addEventListener('click', toggleDone);
     ul.appendChild(li);
-    input.value = '';
+    input.value = "";
 
 
 // Create delete button - style it and append to li
-var deleteButton = document.createElement('button');
-var delX = document.createElement('i');
-delX.classList.add('fas', 'fa-times');
-deleteButton.classList.add('custBtn');
-deleteButton.appendChild(delX);
-deleteButton.addEventListener('click', delItem);
-li.append(deleteButton);
+    var deleteButton = document.createElement('button');
+    var delX = document.createElement('i');
+    delX.classList.add('fas', 'fa-times');
+    deleteButton.classList.add('custBtn');
+    deleteButton.appendChild(delX);
+    deleteButton.addEventListener('click', delItem);
+    li.append(deleteButton);
 
 // Hide Empty List text
-if(checkList() > 0) {
-    var emptyList = document.querySelector('h2');
-    emptyList.style.display = "none";
-}
+    if(checkList() > 0) {
+        var emptyList = document.querySelector('h2');
+        emptyList.style.display = "none";
+    }
 
 // Toggle line-through on click
-function toggleDone() {
-    li.classList.toggle('done');
-}
+    function toggleDone() {
+        li.classList.toggle('done');
+    }
 
 // Delete Items
-function deleteItem() {
-    li.remove();
-    if(checkList() == 0) {
-        var emptyList = document.querySelector('h2');
-        emptyList.style.display = "block";
+    function deleteItem() {
+        li.remove();
+        if(checkList() == 0) {
+            var emptyList = document.querySelector('h2');
+            emptyList.style.display = "block";
+        }
     }
-}
 }
 
 //on keypress enter
