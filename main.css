@@ -98,3 +98,27 @@ body {
    list-style: none;
    transition: all .2s;
  }
+
+ .mainList .listItem:hover {
+   background: #EBF7FF;
+   cursor: pointer;
+ }
+
+ .mainList .listItem:not(:first-child):not(:last-child) {
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+ }
+
+ .mainList .listItem:nth-child(2) {
+   border-radius: 10px 10px 0px 0px;
+   border-bottom: 1px solid black;
+ }
+
+ .mainList .listItem:nth-last-child(1) {
+   border-radius: 0px 0px 10px 10px;
+   border-top: 1px solid black;
+ }
+
+ .done {
+   text-decoration: line-through;
+ }
