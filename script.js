@@ -21,3 +21,12 @@ function createListItem() {
     ul.appendChild(li);
     input.value = '';
 }
+
+// Create delete button - style it and append to li
+var deleteButton = document.createElement('button');
+var delX = document.createElement('i');
+delX.classList.add('fas', 'fa-times');
+deleteButton.classList.add('custBtn');
+deleteButton.appendChild(delX);
+deleteButton.addEventListener('click', delItem);
+li.append(deleteButton);
